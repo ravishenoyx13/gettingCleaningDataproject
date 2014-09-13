@@ -16,10 +16,9 @@ Before I begin, i would like to laydown certain assumptions
 
 At the very first line of the script you need to set your working directory, Please update the first line accordingly
 
-<!-- -->
 
-wd <- "D:\\selfLearning\\Coursera\\DataScienceSpecialization\\3_GettingAndCleaningData\\project"
-setwd(wd)
+`wd <- "D:\\selfLearning\\Coursera\\DataScienceSpecialization\\3_GettingAndCleaningData\\project"
+setwd(wd)`
 
 ### Step 0 - Load all the files
 
