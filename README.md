@@ -18,8 +18,7 @@ At the very first line of the script you need to set your working directory, Ple
 
 
 `wd <- "D:\\selfLearning\\Coursera\\DataScienceSpecialization\\3_GettingAndCleaningData\\project"
-setwd(wd)
-`
+setwd(wd)`
 
 ### Step 0 - Load all the files
 
@@ -27,26 +26,25 @@ Before I begin, I load all the 3 training files and the 3 test files into R.
 
 
 `X_test <- read.table(file=".\\UCI HAR Dataset\\test\\X_test.txt",
-                   colClasses="numeric", header=FALSE)
+                   colClasses="numeric", header=FALSE)`
 
-y_test <- read.table(file=".\\UCI HAR Dataset\\test\\y_test.txt", col.names=c("activity"), 
-                     colClasses="character", stringsAsFactors=FALSE, header=FALSE)
+`y_test <- read.table(file=".\\UCI HAR Dataset\\test\\y_test.txt", col.names=c("activity"), 
+                     colClasses="character", stringsAsFactors=FALSE, header=FALSE)`
 
-subject_test <- read.table(file=".\\UCI HAR Dataset\\test\\subject_test.txt", 
+`subject_test <- read.table(file=".\\UCI HAR Dataset\\test\\subject_test.txt", 
                            col.names=c("subject"), colClasses="character", 
-                           stringsAsFactors=FALSE, header=FALSE)
+                           stringsAsFactors=FALSE, header=FALSE)`
 
 
-X_train <- read.table(file=".\\UCI HAR Dataset\\train\\X_train.txt", 
-                     colClasses="numeric", header=FALSE)
+`X_train <- read.table(file=".\\UCI HAR Dataset\\train\\X_train.txt", 
+                     colClasses="numeric", header=FALSE)`
 
-y_train <- read.table(file=".\\UCI HAR Dataset\\train\\y_train.txt", col.names=c("activity"), 
-                     colClasses="character", stringsAsFactors=FALSE, header=FALSE)
+`y_train <- read.table(file=".\\UCI HAR Dataset\\train\\y_train.txt", col.names=c("activity"), 
+                     colClasses="character", stringsAsFactors=FALSE, header=FALSE)`
 
-subject_train <- read.table(file=".\\UCI HAR Dataset\\train\\subject_train.txt", 
+`subject_train <- read.table(file=".\\UCI HAR Dataset\\train\\subject_train.txt", 
                            col.names=c("subject"), colClasses="character", 
-                           stringsAsFactors=FALSE, header=FALSE)
-`
+                           stringsAsFactors=FALSE, header=FALSE)`
                            
 ### Step 1 - Merges the training and the test sets to create one data set.
 
@@ -56,21 +54,18 @@ then I merge the two resultant sets using rbind
 The X_train has 561 Variables, the subject_train and y_train has one variable each. All 3 of them have 7352 observations. So when
 I cbind them I get 1 data set that has 7352 observations and 563 variables. I store this in a variable called all_train
 
-`all_train <- cbind(X_train, y_train, subject_train)
-`
+`all_train <- cbind(X_train, y_train, subject_train)`
 
 The X_test has 561 Variables, the subject_test and y_test has one variable each. All 3 of them have 2947 observations. So when
 I cbind them I get 1 data set that has 2947 observations and 563 variables. I store this in a variable called all_test.
 
-`all_test <- cbind(X_test, y_test, subject_test)
-`
+`all_test <- cbind(X_test, y_test, subject_test)`
 
 I then append all_test to all_train. Each of them have 563 variables. all_test has 2947 observations and all_train has 7352 
 observations. I append them using rbind and store the result in variable called fulldata. this will have 10299 observations and 
 563 variables
 
-`all_test <- fulldata <- rbind(all_train, all_test)
-`
+`all_test <- fulldata <- rbind(all_train, all_test)`
 
 ### Step 2 - Extracts only the measurements on the mean and standard deviation for each measurement.
 
@@ -80,10 +75,9 @@ i am forming a vector and will use the same to filter out only the required vari
 I will then pull out only those variables from fulldata and discard the remainders
 
 `reqdColumns <- c(1:6, 41:46, 81:86, 121:126, 161:166, 201:202, 214:215, 227:228, 240:241, 253:254, 266:271, 
-                  345:350, 424:429, 503:504, 516:517, 529:530, 542:543, 562, 563)
+                  345:350, 424:429, 503:504, 516:517, 529:530, 542:543, 562, 563)`
 
-fulldata <- fulldata[,reqdColumns]
-`
+`fulldata <- fulldata[,reqdColumns]`
 
 ### Step 3 - Uses descriptive activity names to name the activities in the data set.
 
@@ -125,9 +119,7 @@ form a vector and then assign it to the names of the fulldata
 As the last 2 variables are already appropriately named (subject and activity). I will use the varLabels vector to name
 the first 66 variables
 
-`
-names(fulldata)[1:66] <- varLabels
-`
+`names(fulldata)[1:66] <- varLabels`
 
 ### Step 5 - From the data set in step 4, creates a second, independent tidy data set with the average of each variable for each activity and each subject
 
@@ -135,19 +127,16 @@ To do this I used the reshape2 package and used the function melt and dcast to a
 
 first I will install the package and import the library
 
-`install.packages("reshape2")
-library(reshape2)
-`
+`install.packages("reshape2")`
+`library(reshape2)`
 
 Now I will melt the data with dimensions being subject and activity and the remainder vars as measures
 
-`datamelt <- melt(fulldata, id=c("subject", "activity"), measure.vars= varLabels)
-finaldata <- dcast(datamelt, subject+activity~variable, mean)
-`
+`datamelt <- melt(fulldata, id=c("subject", "activity"), measure.vars= varLabels)`
+`finaldata <- dcast(datamelt, subject+activity~variable, mean)`
 
 Now that the final data is arrived at, I will now write it back into the working directory
 
-`write.table(finaldata, file="finaldata.txt", row.names=FALSE)
-`
+`write.table(finaldata, file="finaldata.txt", row.names=FALSE)`
 
 Thank you.
