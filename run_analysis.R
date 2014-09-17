@@ -71,7 +71,7 @@ fulldata$activity <- ifelse(fulldata$activity == 1, "WALKING",
 
 ## By referring to the features.txt, i have identified the column names of variables that 
 ## have mean and std, with these names i am forming a vector and will use the same
-## to label the variables
+## to label the variables.
 
 varLabels <- c("tBodyAcc-mean-X", "tBodyAcc-mean-Y", "tBodyAcc-mean-Z", "tBodyAcc-std-X",
                    "tBodyAcc-std-Y", "tBodyAcc-std-Z", "tGravityAcc-mean-X", "tGravityAcc-mean-Y",
@@ -101,7 +101,9 @@ names(fulldata)[1:66] <- varLabels
 
 # We will use the reshape2 library and use functions melt and dcast to achieve this
 
+# you can comment out/ignore the package installation if the package has already been installed
 install.packages("reshape2")
+
 library(reshape2)
 
 #we will melt the data with dimensions being subject and activity and the remainder vars as measures
@@ -109,6 +111,9 @@ library(reshape2)
 datamelt <- melt(fulldata, id=c("subject", "activity"), measure.vars= varLabels)
 finaldata <- dcast(datamelt, subject+activity~variable, mean)
 
+# since all the variables from column 3 onwards now contain the average value, I will append the 
+# text avg in front of the variable names
+names(finaldata)[3:length(names(finaldata))] <- paste("avg_", names(finaldata)[3:length(names(finaldata))], sep="")
 
 # lets write this data back into the working directory
 

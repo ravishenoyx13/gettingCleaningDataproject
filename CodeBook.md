@@ -56,69 +56,69 @@ Activity contains the label for the kind of activity that was being performed by
 
 * subject - contains numeric value from 1 to 30 indicating the volunteer on whom these tests were subjected on
 * activity - contains the label for the kind of activity that was being performed by the subject while these observations were being recorded. There are altogether 6 labels which are WALKING, WALKING_UPSTAIRS, WALKING_DOWNSTAIRS, SITTING, STANDING, LAYING
-* tBodyAcc-mean-X - This is a numeric value which contains the average of the mean of the signal tBodyAcc measured on X axis for the corresponding subject and activity.
-* tBodyAcc-mean-Y - This is a numeric value which contains the average of the mean of the signal tBodyAcc measured on Y axis for the corresponding subject and activity.
-* tBodyAcc-mean-Z - This is a numeric value which contains the average of the mean of the signal tBodyAcc measured on Z axis for the corresponding subject and activity.
-* tBodyAcc-std-X - This is a numeric value which contains the average of the std of the signal tBodyAcc measured on X axis for the corresponding subject and activity.
-* tBodyAcc-std-Y - This is a numeric value which contains the average of the std of the signal tBodyAcc measured on Y axis for the corresponding subject and activity.
-* tBodyAcc-std-Z - This is a numeric value which contains the average of the std of the signal tBodyAcc measured on Z axis for the corresponding subject and activity.
-* tGravityAcc-mean-X - This is a numeric value which contains the average of the mean of the signal tGravityAcc measured on X axis for the corresponding subject and activity.
-* tGravityAcc-mean-Y - This is a numeric value which contains the average of the mean of the signal tGravityAcc measured on Y axis for the corresponding subject and activity.
-* tGravityAcc-mean-Z - This is a numeric value which contains the average of the mean of the signal tGravityAcc measured on Z axis for the corresponding subject and activity.
-* tGravityAcc-std-X - This is a numeric value which contains the average of the std of the signal tGravityAcc measured on X axis for the corresponding subject and activity.
-* tGravityAcc-std-Y - This is a numeric value which contains the average of the std of the signal tGravityAcc measured on Y axis for the corresponding subject and activity.
-* tGravityAcc-std-Z - This is a numeric value which contains the average of the std of the signal tGravityAcc measured on Z axis for the corresponding subject and activity.
-* tBodyAccJerk-mean-X - This is a numeric value which contains the average of the mean of the signal tBodyAccJerk measured on X axis for the corresponding subject and activity.
-* tBodyAccJerk-mean-Y - This is a numeric value which contains the average of the mean of the signal tBodyAccJerk measured on Y axis for the corresponding subject and activity.
-* tBodyAccJerk-mean-Z - This is a numeric value which contains the average of the mean of the signal tBodyAccJerk measured on Z axis for the corresponding subject and activity.
-* tBodyAccJerk-std-X - This is a numeric value which contains the average of the std of the signal tBodyAccJerk measured on X axis for the corresponding subject and activity.
-* tBodyAccJerk-std-Y - This is a numeric value which contains the average of the std of the signal tBodyAccJerk measured on Y axis for the corresponding subject and activity.
-* tBodyAccJerk-std-Z - This is a numeric value which contains the average of the std of the signal tBodyAccJerk measured on Z axis for the corresponding subject and activity.
-* tBodyGyro-mean-X - This is a numeric value which contains the average of the mean of the signal tBodyGyro measured on X axis for the corresponding subject and activity.
-* tBodyGyro-mean-Y - This is a numeric value which contains the average of the mean of the signal tBodyGyro measured on Y axis for the corresponding subject and activity.
-* tBodyGyro-mean-Z - This is a numeric value which contains the average of the mean of the signal tBodyGyro measured on Z axis for the corresponding subject and activity.
-* tBodyGyro-std-X - This is a numeric value which contains the average of the std of the signal tBodyGyro measured on X axis for the corresponding subject and activity.
-* tBodyGyro-std-Y - This is a numeric value which contains the average of the std of the signal tBodyGyro measured on Y axis for the corresponding subject and activity.
-* tBodyGyro-std-Z - This is a numeric value which contains the average of the std of the signal tBodyGyro measured on Z axis for the corresponding subject and activity.
-* tBodyGyroJerk-mean-X - This is a numeric value which contains the average of the mean of the signal tBodyGyroJerk measured on X axis for the corresponding subject and activity.
-* tBodyGyroJerk-mean-Y - This is a numeric value which contains the average of the mean of the signal tBodyGyroJerk measured on Y axis for the corresponding subject and activity.
-* tBodyGyroJerk-mean-Z - This is a numeric value which contains the average of the mean of the signal tBodyGyroJerk measured on Z axis for the corresponding subject and activity.
-* tBodyGyroJerk-std-X - This is a numeric value which contains the average of the std of the signal tBodyGyroJerk measured on X axis for the corresponding subject and activity.
-* tBodyGyroJerk-std-Y - This is a numeric value which contains the average of the std of the signal tBodyGyroJerk measured on Y axis for the corresponding subject and activity.
-* tBodyGyroJerk-std-Z - This is a numeric value which contains the average of the std of the signal tBodyGyroJerk measured on Z axis for the corresponding subject and activity.
-* tBodyAccMag-mean - This is a numeric value which contains the average of the mean of the signal tBodyAccMag for the corresponding subject and activity.
-* tBodyAccMag-std - This is a numeric value which contains the average of the mean of the signal tBodyAccMag for the corresponding subject and activity.
-* tGravityAccMag-mean - This is a numeric value which contains the average of the mean of the signal tGravityAccMag for the corresponding subject and activity.
-* tGravityAccMag-std - This is a numeric value which contains the average of the mean of the signal tGravityAccMag for the corresponding subject and activity.
-* tBodyAccJerkMag-mean - This is a numeric value which contains the average of the mean of the signal tBodyAccJerkMag for the corresponding subject and activity.
-* tBodyAccJerkMag-std - This is a numeric value which contains the average of the mean of the signal tBodyAccJerkMag for the corresponding subject and activity.
-* tBodyGyroMag-mean - This is a numeric value which contains the average of the mean of the signal tBodyGyroMag for the corresponding subject and activity.
-* tBodyGyroMag-std - This is a numeric value which contains the average of the mean of the signal tBodyGyroMag for the corresponding subject and activity.
-* tBodyGyroJerkMag-mean - This is a numeric value which contains the average of the mean of the signal tBodyGyroJerkMag for the corresponding subject and activity.
-* tBodyGyroJerkMag-std - This is a numeric value which contains the average of the mean of the signal tBodyGyroJerkMag for the corresponding subject and activity.
-* fBodyAcc-mean-X - This is a numeric value which contains the average of the mean of the signal fBodyAcc measured on X axis for the corresponding subject and activity.
-* fBodyAcc-mean-Y - This is a numeric value which contains the average of the mean of the signal fBodyAcc measured on Y axis for the corresponding subject and activity.
-* fBodyAcc-mean-Z - This is a numeric value which contains the average of the mean of the signal fBodyAcc measured on Z axis for the corresponding subject and activity.
-* fBodyAcc-std-X - This is a numeric value which contains the average of the std of the signal fBodyAcc measured on X axis for the corresponding subject and activity.
-* fBodyAcc-std-Y - This is a numeric value which contains the average of the std of the signal fBodyAcc measured on Y axis for the corresponding subject and activity.
-* fBodyAcc-std-Z - This is a numeric value which contains the average of the std of the signal fBodyAcc measured on Z axis for the corresponding subject and activity.
-* fBodyAccJerk-mean-X - This is a numeric value which contains the average of the mean of the signal fBodyAccJerk measured on X axis for the corresponding subject and activity.
-* fBodyAccJerk-mean-Y - This is a numeric value which contains the average of the mean of the signal fBodyAccJerk measured on Y axis for the corresponding subject and activity.
-* fBodyAccJerk-mean-Z - This is a numeric value which contains the average of the mean of the signal fBodyAccJerk measured on Z axis for the corresponding subject and activity.
-* fBodyAccJerk-std-X - This is a numeric value which contains the average of the std of the signal fBodyAccJerk measured on X axis for the corresponding subject and activity.
-* fBodyAccJerk-std-Y - This is a numeric value which contains the average of the std of the signal fBodyAccJerk measured on Y axis for the corresponding subject and activity.
-* fBodyAccJerk-std-Z - This is a numeric value which contains the average of the std of the signal fBodyAccJerk measured on Z axis for the corresponding subject and activity.
-* fBodyGyro-mean-X - This is a numeric value which contains the average of the mean of the signal fBodyGyro measured on X axis for the corresponding subject and activity.
-* fBodyGyro-mean-Y - This is a numeric value which contains the average of the mean of the signal fBodyGyro measured on Y axis for the corresponding subject and activity.
-* fBodyGyro-mean-Z - This is a numeric value which contains the average of the mean of the signal fBodyGyro measured on Z axis for the corresponding subject and activity.
-* fBodyGyro-std-X - This is a numeric value which contains the average of the std of the signal fBodyGyro measured on X axis for the corresponding subject and activity.
-* fBodyGyro-std-Y - This is a numeric value which contains the average of the std of the signal fBodyGyro measured on Y axis for the corresponding subject and activity.
-* fBodyGyro-std-Z - This is a numeric value which contains the average of the std of the signal fBodyGyro measured on Z axis for the corresponding subject and activity.
-* fBodyAccMag-mean - This is a numeric value which contains the average of the mean of the signal fBodyAccMag for the corresponding subject and activity.
-* fBodyAccMag-std - This is a numeric value which contains the average of the mean of the signal fBodyAccMag for the corresponding subject and activity.
-* fBodyBodyAccJerkMag-mean - This is a numeric value which contains the average of the mean of the signal fBodyBodyAccJerkMag for the corresponding subject and activity.
-* fBodyBodyAccJerkMag-std - This is a numeric value which contains the average of the mean of the signal fBodyBodyAccJerkMag for the corresponding subject and activity.
-* fBodyBodyGyroMag-mean - This is a numeric value which contains the average of the mean of the signal fBodyBodyGyroMag for the corresponding subject and activity.
-* fBodyBodyGyroMag-std - This is a numeric value which contains the average of the mean of the signal fBodyBodyGyroMag for the corresponding subject and activity.
-* fBodyBodyGyroJerkMag-mean - This is a numeric value which contains the average of the mean of the signal fBodyBodyGyroJerkMag for the corresponding subject and activity.
-* fBodyBodyGyroJerkMag-std - This is a numeric value which contains the average of the mean of the signal fBodyBodyGyroJerkMag for the corresponding subject and activity.
+* avg_tBodyAcc-mean-X - This is a numeric value which contains the average of the mean of the signal tBodyAcc measured on X axis for the corresponding subject and activity.
+* avg_tBodyAcc-mean-Y - This is a numeric value which contains the average of the mean of the signal tBodyAcc measured on Y axis for the corresponding subject and activity.
+* avg_tBodyAcc-mean-Z - This is a numeric value which contains the average of the mean of the signal tBodyAcc measured on Z axis for the corresponding subject and activity.
+* avg_tBodyAcc-std-X - This is a numeric value which contains the average of the std of the signal tBodyAcc measured on X axis for the corresponding subject and activity.
+* avg_tBodyAcc-std-Y - This is a numeric value which contains the average of the std of the signal tBodyAcc measured on Y axis for the corresponding subject and activity.
+* avg_tBodyAcc-std-Z - This is a numeric value which contains the average of the std of the signal tBodyAcc measured on Z axis for the corresponding subject and activity.
+* avg_tGravityAcc-mean-X - This is a numeric value which contains the average of the mean of the signal tGravityAcc measured on X axis for the corresponding subject and activity.
+* avg_tGravityAcc-mean-Y - This is a numeric value which contains the average of the mean of the signal tGravityAcc measured on Y axis for the corresponding subject and activity.
+* avg_tGravityAcc-mean-Z - This is a numeric value which contains the average of the mean of the signal tGravityAcc measured on Z axis for the corresponding subject and activity.
+* avg_tGravityAcc-std-X - This is a numeric value which contains the average of the std of the signal tGravityAcc measured on X axis for the corresponding subject and activity.
+* avg_tGravityAcc-std-Y - This is a numeric value which contains the average of the std of the signal tGravityAcc measured on Y axis for the corresponding subject and activity.
+* avg_tGravityAcc-std-Z - This is a numeric value which contains the average of the std of the signal tGravityAcc measured on Z axis for the corresponding subject and activity.
+* avg_tBodyAccJerk-mean-X - This is a numeric value which contains the average of the mean of the signal tBodyAccJerk measured on X axis for the corresponding subject and activity.
+* avg_tBodyAccJerk-mean-Y - This is a numeric value which contains the average of the mean of the signal tBodyAccJerk measured on Y axis for the corresponding subject and activity.
+* avg_tBodyAccJerk-mean-Z - This is a numeric value which contains the average of the mean of the signal tBodyAccJerk measured on Z axis for the corresponding subject and activity.
+* avg_tBodyAccJerk-std-X - This is a numeric value which contains the average of the std of the signal tBodyAccJerk measured on X axis for the corresponding subject and activity.
+* avg_tBodyAccJerk-std-Y - This is a numeric value which contains the average of the std of the signal tBodyAccJerk measured on Y axis for the corresponding subject and activity.
+* avg_tBodyAccJerk-std-Z - This is a numeric value which contains the average of the std of the signal tBodyAccJerk measured on Z axis for the corresponding subject and activity.
+* avg_tBodyGyro-mean-X - This is a numeric value which contains the average of the mean of the signal tBodyGyro measured on X axis for the corresponding subject and activity.
+* avg_tBodyGyro-mean-Y - This is a numeric value which contains the average of the mean of the signal tBodyGyro measured on Y axis for the corresponding subject and activity.
+* avg_tBodyGyro-mean-Z - This is a numeric value which contains the average of the mean of the signal tBodyGyro measured on Z axis for the corresponding subject and activity.
+* avg_tBodyGyro-std-X - This is a numeric value which contains the average of the std of the signal tBodyGyro measured on X axis for the corresponding subject and activity.
+* avg_tBodyGyro-std-Y - This is a numeric value which contains the average of the std of the signal tBodyGyro measured on Y axis for the corresponding subject and activity.
+* avg_tBodyGyro-std-Z - This is a numeric value which contains the average of the std of the signal tBodyGyro measured on Z axis for the corresponding subject and activity.
+* avg_tBodyGyroJerk-mean-X - This is a numeric value which contains the average of the mean of the signal tBodyGyroJerk measured on X axis for the corresponding subject and activity.
+* avg_tBodyGyroJerk-mean-Y - This is a numeric value which contains the average of the mean of the signal tBodyGyroJerk measured on Y axis for the corresponding subject and activity.
+* avg_tBodyGyroJerk-mean-Z - This is a numeric value which contains the average of the mean of the signal tBodyGyroJerk measured on Z axis for the corresponding subject and activity.
+* avg_tBodyGyroJerk-std-X - This is a numeric value which contains the average of the std of the signal tBodyGyroJerk measured on X axis for the corresponding subject and activity.
+* avg_tBodyGyroJerk-std-Y - This is a numeric value which contains the average of the std of the signal tBodyGyroJerk measured on Y axis for the corresponding subject and activity.
+* avg_tBodyGyroJerk-std-Z - This is a numeric value which contains the average of the std of the signal tBodyGyroJerk measured on Z axis for the corresponding subject and activity.
+* avg_tBodyAccMag-mean - This is a numeric value which contains the average of the mean of the signal tBodyAccMag for the corresponding subject and activity.
+* avg_tBodyAccMag-std - This is a numeric value which contains the average of the mean of the signal tBodyAccMag for the corresponding subject and activity.
+* avg_tGravityAccMag-mean - This is a numeric value which contains the average of the mean of the signal tGravityAccMag for the corresponding subject and activity.
+* avg_tGravityAccMag-std - This is a numeric value which contains the average of the mean of the signal tGravityAccMag for the corresponding subject and activity.
+* avg_tBodyAccJerkMag-mean - This is a numeric value which contains the average of the mean of the signal tBodyAccJerkMag for the corresponding subject and activity.
+* avg_tBodyAccJerkMag-std - This is a numeric value which contains the average of the mean of the signal tBodyAccJerkMag for the corresponding subject and activity.
+* avg_tBodyGyroMag-mean - This is a numeric value which contains the average of the mean of the signal tBodyGyroMag for the corresponding subject and activity.
+* avg_tBodyGyroMag-std - This is a numeric value which contains the average of the mean of the signal tBodyGyroMag for the corresponding subject and activity.
+* avg_tBodyGyroJerkMag-mean - This is a numeric value which contains the average of the mean of the signal tBodyGyroJerkMag for the corresponding subject and activity.
+* avg_tBodyGyroJerkMag-std - This is a numeric value which contains the average of the mean of the signal tBodyGyroJerkMag for the corresponding subject and activity.
+* avg_fBodyAcc-mean-X - This is a numeric value which contains the average of the mean of the signal fBodyAcc measured on X axis for the corresponding subject and activity.
+* avg_fBodyAcc-mean-Y - This is a numeric value which contains the average of the mean of the signal fBodyAcc measured on Y axis for the corresponding subject and activity.
+* avg_fBodyAcc-mean-Z - This is a numeric value which contains the average of the mean of the signal fBodyAcc measured on Z axis for the corresponding subject and activity.
+* avg_fBodyAcc-std-X - This is a numeric value which contains the average of the std of the signal fBodyAcc measured on X axis for the corresponding subject and activity.
+* avg_fBodyAcc-std-Y - This is a numeric value which contains the average of the std of the signal fBodyAcc measured on Y axis for the corresponding subject and activity.
+* avg_fBodyAcc-std-Z - This is a numeric value which contains the average of the std of the signal fBodyAcc measured on Z axis for the corresponding subject and activity.
+* avg_fBodyAccJerk-mean-X - This is a numeric value which contains the average of the mean of the signal fBodyAccJerk measured on X axis for the corresponding subject and activity.
+* avg_fBodyAccJerk-mean-Y - This is a numeric value which contains the average of the mean of the signal fBodyAccJerk measured on Y axis for the corresponding subject and activity.
+* avg_fBodyAccJerk-mean-Z - This is a numeric value which contains the average of the mean of the signal fBodyAccJerk measured on Z axis for the corresponding subject and activity.
+* avg_fBodyAccJerk-std-X - This is a numeric value which contains the average of the std of the signal fBodyAccJerk measured on X axis for the corresponding subject and activity.
+* avg_fBodyAccJerk-std-Y - This is a numeric value which contains the average of the std of the signal fBodyAccJerk measured on Y axis for the corresponding subject and activity.
+* avg_fBodyAccJerk-std-Z - This is a numeric value which contains the average of the std of the signal fBodyAccJerk measured on Z axis for the corresponding subject and activity.
+* avg_fBodyGyro-mean-X - This is a numeric value which contains the average of the mean of the signal fBodyGyro measured on X axis for the corresponding subject and activity.
+* avg_fBodyGyro-mean-Y - This is a numeric value which contains the average of the mean of the signal fBodyGyro measured on Y axis for the corresponding subject and activity.
+* avg_fBodyGyro-mean-Z - This is a numeric value which contains the average of the mean of the signal fBodyGyro measured on Z axis for the corresponding subject and activity.
+* avg_fBodyGyro-std-X - This is a numeric value which contains the average of the std of the signal fBodyGyro measured on X axis for the corresponding subject and activity.
+* avg_fBodyGyro-std-Y - This is a numeric value which contains the average of the std of the signal fBodyGyro measured on Y axis for the corresponding subject and activity.
+* avg_fBodyGyro-std-Z - This is a numeric value which contains the average of the std of the signal fBodyGyro measured on Z axis for the corresponding subject and activity.
+* avg_fBodyAccMag-mean - This is a numeric value which contains the average of the mean of the signal fBodyAccMag for the corresponding subject and activity.
+* avg_fBodyAccMag-std - This is a numeric value which contains the average of the mean of the signal fBodyAccMag for the corresponding subject and activity.
+* avg_fBodyBodyAccJerkMag-mean - This is a numeric value which contains the average of the mean of the signal fBodyBodyAccJerkMag for the corresponding subject and activity.
+* avg_fBodyBodyAccJerkMag-std - This is a numeric value which contains the average of the mean of the signal fBodyBodyAccJerkMag for the corresponding subject and activity.
+* avg_fBodyBodyGyroMag-mean - This is a numeric value which contains the average of the mean of the signal fBodyBodyGyroMag for the corresponding subject and activity.
+* avg_fBodyBodyGyroMag-std - This is a numeric value which contains the average of the mean of the signal fBodyBodyGyroMag for the corresponding subject and activity.
+* avg_fBodyBodyGyroJerkMag-mean - This is a numeric value which contains the average of the mean of the signal fBodyBodyGyroJerkMag for the corresponding subject and activity.
+* avg_fBodyBodyGyroJerkMag-std - This is a numeric value which contains the average of the mean of the signal fBodyBodyGyroJerkMag for the corresponding subject and activity.
