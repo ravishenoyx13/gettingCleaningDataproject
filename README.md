@@ -139,4 +139,6 @@ Now that the final data is arrived at, I will now write it back into the working
 
 `write.table(finaldata, file="finaldata.txt", row.names=FALSE)`
 
-Thank you.
+My final tidy data has dimension 180*68. I would say this is wide form of tidy data. I contemplated for long weather i should go for a narrow tidy data by making the experiment too a variable but then i strongly feel that structuring the data depends on what our final analysis is. given that for this project we are not told for what purpose or analysis the data is going to be used for, it is hard to conclude weather a narrow or wide form of tidy data is applicable. I think the same has been discussed endlessly in the forums and both are applicable for this assignment.
+
+Thank you and have a great day!!
